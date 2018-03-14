@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Login Form</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	 <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+  </head>
+  <body>
+     <div class="container">
+        <form id="user_registration_form" class="add_user" action="successful.html">
+           <h2 class="page-header">Register User</h2>
+           <div class="form-group">
+             <label for="task">E-mail</label>
+             <input type="email" class="form-control" id="email" placeholder="Enter your email address" required autofocus>
+          </div>
+          <div class="form-group">
+            <label for="task">Password</label>
+            <input type="password" class="form-control" id="pass" placeholder="Choose your password" title="Choose password which consists Capital and non-captal letters with numbers and special characters like @,#,$,%,^,*,_,| ."  onchange="validatePassword()" required>
+         </div>
+         <div class="form-group">
+           <label for="task">Confirm Password</label>
+           <input type="password" minlength="5" pattern="[a-zA-Z0-9!@#$%^*_|]{6,25}" class="form-control" id="cpass" placeholder="Re-enter your password" onkeyup="validatePassword()" required>
+        </div>
+           <div class="form-group">
+             <label for="task">First Name</label>
+             <input type="text" class="form-control" id="fname" placeholder="Enter First Name">
+          </div>
+          <div class="form-group">
+            <label for="task">Last Name</label>
+            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name">
+         </div>
+         <div class="form-group">
+           <label for="task">Birth Date</label>
+           <input type="date" class="form-control" id="date" required>
+        </div>
+        <button type="submit" class="btn btn-primary form-control">Submit</button>
+
+        </form>
+     </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="js/bootstrap.js"></script>
+     <script src="js/main.js"></script>
+  </body>
+</html>
